@@ -1,0 +1,150 @@
+.ItemBackground {
+
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    /*width: 17.6vw;
+    height: 17.6vw;*/
+
+    font-size: calc(0.00476 * 17.6vw); /*(1/210 * width = 1px)*/
+
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: calc(0.0476 * 17.6vw); /*(10/210 * width = 10px)*/
+
+    /*pointer-events: none;*/
+
+}
+
+/*.ItemBackground:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}*/
+
+
+.ItemTitle {
+
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 83%;
+    bottom: 2%;
+
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20em;
+    line-height: 160%;
+    margin: 0%;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #292929;
+
+    white-space: nowrap;
+
+    -khtml-user-select: text;
+    -o-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+
+}
+
+
+
+.ItemLine {
+
+    position: absolute;
+    width: 100%;
+    height: 1%;
+    left: 0%;
+    top: 80%;
+
+    background: #292929;
+}
+
+
+.ItemTimeWait {
+
+    position: absolute;
+    left: 50.2%;
+    right: 13.52%;
+    top: 2.4%;
+
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15em;
+    line-height: calc(0.119 * 20vmax); /*(heigh state box = state_box_heigh% * box_height)*/
+    text-align: center;
+    margin: 0 auto;
+
+    color: #F5D061;
+
+    white-space: nowrap;
+
+    -khtml-user-select: text;
+    -o-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+.ItemInfoIcon {
+
+    position: absolute;
+    width: 9.52%;
+    height: 9.52%;
+    right: 2.38%;
+    top: 2.38%;
+
+    object-fit: contain;
+}
+
+.ItemWaitList {
+
+    position: absolute;
+    width: 11.9%;
+    height: 11.9%;
+    right: 2.38%;
+    bottom: 21.9%;
+
+    background: rgba(138, 172, 255, 0.7);
+    border: 1px solid #8AACFF;
+    box-sizing: border-box;
+    border-radius: 20%;
+
+}
+
+.ItemWaitListText {
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15em;
+    line-height: calc(0.119 * 20vmax); /*(heigh state box = state_box_heigh% * box_height)*/
+    text-align: center;
+    margin: 0 auto;
+
+    color: #FFFFFF;
+
+    white-space: nowrap;
+
+    -khtml-user-select: text;
+    -o-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+
+    z-index: 1;
+
+}

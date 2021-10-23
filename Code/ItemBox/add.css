@@ -1,0 +1,33 @@
+.AddItemBackground {
+
+    position: relative;
+    width: 17.4vw;
+    height: 17.4vw;
+
+    font-size: calc(17.4vw / 210); /*(1/210 * width = 1px)*/
+
+    background: #f5f5f5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: calc(0.0476 * 17.6vw); /*(10/210 * width = 10px)*/
+
+    cursor: pointer;
+
+}
+
+.AddItemBackground img {
+
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 35%;
+    top: 35%;
+
+    object-fit: contain;
+
+}
+
+.AddItemBackground:active {
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+}

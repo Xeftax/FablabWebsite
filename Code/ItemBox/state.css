@@ -1,0 +1,151 @@
+.ItemState {
+
+    position: absolute;
+    width: 46.2%;
+    height: 11.9%;
+    left: 2.4%;
+    top: 2.4%;
+
+    background: rgba(245, 208, 97, 0.70);
+    border: 1px solid #F5D061;
+    box-sizing: border-box;
+    border-radius: calc(0.0238 * 20vmax); /*****************/
+
+    object-fit: contain;
+}
+
+.ItemStateLeftChangeSelector {
+
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+.ItemStateRightChangeSelector {
+
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0%;
+    top: 0%;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+.ItemStateLeftChange {
+
+    position: absolute; 
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+
+    background: rgba(103, 186, 109, 0.7);
+    /*border: 1px solid #67BA6D;*/
+    box-sizing: border-box;
+    border-radius: calc(0.019 * 20vmax) 0px 0px calc(0.019 * 20vmax); /*****************/
+
+    opacity: 0;
+
+    transition-property: width, opacity;
+    transition-duration: 200ms, 0s;
+    transition-delay: 0s, 100ms;
+}
+
+.ItemStateRightChange {
+
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0%;
+    top: 0%;
+
+    background: rgba(221, 126, 126, 0.7);
+    /*border: 1px solid #F5D061;*/
+    box-sizing: border-box;
+    border-radius: 0px calc(0.019 * 20vmax) calc(0.019 * 20vmax) 0px; /*****************/
+
+    opacity: 0;
+
+    transition-property: width, opacity;
+    transition-duration: 200ms, 0s;
+    transition-delay: 0s, 100ms;
+}
+
+
+.ItemStateRightChangeSelector:hover ~ .ItemStateRightChange{
+    width: 60%;
+    opacity: 1;
+
+    transition-property: width, opacity;
+    transition-duration: 200ms, 0s;
+    transition-delay: 100ms;
+}
+
+.ItemStateRightChangeSelector:hover ~ .ItemStateLeftChange{
+    width: 40%;
+    opacity: 1;
+
+    transition-property: width, opacity;
+    transition-duration: 200ms, 0s;
+    transition-delay: 100ms;
+}
+
+
+
+.ItemStateLeftChangeSelector:hover ~ .ItemStateLeftChange{
+    width: 60%;
+    opacity: 1;
+
+    transition-property: width, opacity;
+    transition-duration: 200ms, 0s;
+    transition-delay: 100ms;
+}
+
+.ItemStateLeftChangeSelector:hover ~ .ItemStateRightChange{
+    width: 40%;
+    opacity: 1;
+
+    transition-property: width, opacity;
+    transition-duration: 200ms, 0s;
+    transition-delay: 100ms;
+}
+
+.ItemState img {
+    
+    position: absolute;
+    width: 15.46%;
+    height: 60.02%;
+    left: 5.15%;
+    top: 20%;
+    bottom: 20%;
+
+    object-fit: contain;
+}
+
+.ItemState p {
+
+    position: absolute;
+    left: 15.46%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15em;
+    line-height: calc(0.119 * 20vmax); /*(heigh state box = state_box_heigh% * box_height)*/
+    text-align: center;
+    margin: 0 auto;
+
+    color: #424242;
+
+    
+}

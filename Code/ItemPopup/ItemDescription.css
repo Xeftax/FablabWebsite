@@ -1,0 +1,91 @@
+.ItemDescription {
+    position: absolute;
+    width: 20vmax;
+    height: 25vmax;
+    left: 700px;
+    top: 250px;
+
+    font-size: calc(0.00316456 * 25vmax); /* 1/316 * 25vmax */
+
+    background: #F6F9FF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: calc(0.0316456 * 25vmax); /* font*10 (rayon) */
+}
+
+.ItemDescriptionTitle {
+    position: absolute;
+    left: 8%;
+    right: 8%;
+    top: 2%;
+    bottom: 82%;
+
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25em;
+    line-height: 160%;
+    margin: 0%;
+    text-align: start;
+    vertical-align: middle;
+
+    color: #292929;
+}
+
+.ItemDescriptionLine {
+    position: absolute;
+    width: 100%;
+    height: 1%;
+    left: 0%;
+    top: 15%;
+
+    background: #292929;
+}
+
+.ItemDescriptionText {
+    position: absolute;
+    left: 5.6%;
+    right: 5.6%;
+    top: 20%;
+    bottom: 30%;
+
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16em;
+    line-height: 118.75%;
+    margin: 0%;
+    text-align: start;
+    vertical-align: middle;
+
+    color: #292929;
+}
+
+.ItemDescription img {
+    position: absolute;
+    width: 35.8%;
+    left: 11.2%;
+    right: 53%;
+    top: 70%;
+    bottom: 4.49%;
+
+    object-fit: contain;
+}
+
+.ItemDescription a {
+    position: absolute;
+    left: 70%;
+    right: 0%;
+    top: 93%;
+    bottom: 3.2%;
+
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14em;
+    line-height: 115%;
+    margin: 0%;
+    text-align: start;
+    vertical-align: middle;
+
+    color: #0000EE;
+}

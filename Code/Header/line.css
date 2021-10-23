@@ -1,0 +1,9 @@
+.HeaderLine {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 82px;
+    
+    background: #292929;
+}

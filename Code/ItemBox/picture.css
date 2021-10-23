@@ -1,0 +1,85 @@
+.ItemPicture {
+
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 20%;
+
+    object-fit: contain;
+}
+
+.ItemSelectPictureBackground {
+
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    left: 0%;
+    top: 0%;
+
+    font-size: calc(0.00476 * 20vmax); /*(1/210 * width = 1px)*/
+
+    opacity: 0;
+
+    background: rgba(41, 41, 41, 0.4);
+    border-radius: calc(0.0476 * 20vmax) calc(0.0476 * 20vmax) 0px 0px; /*(10/210 * width = 10px)*/
+
+}
+
+.ItemSelectPicture {
+
+    position: absolute;
+    width: 70%;
+    height: 20%;
+    left: 15%;
+    top: 40%;
+
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: calc(0.0238 * 20vmax); /*****************/
+
+    object-fit: contain;
+}
+
+.ItemSelectPicture input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+	opacity: 0;
+	overflow: hidden;
+	z-index: 1;
+
+}
+
+.ItemSelectPicture p {
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15em;
+    line-height: 210%; /*(heigh state box = state_box_heigh% * box_height)*/
+    text-align: center;
+    margin: 0 auto;
+
+    color: #ffffff;
+
+}
+
+.ItemSelectPictureBackground:hover {
+    opacity: 1;
+}
+
+.ItemSelectPicture:hover {
+    background: rgba(41, 41, 41, 0.4);
+}
